@@ -1,0 +1,18 @@
+1. Import the module 're' for regular expression in python3
+
+2. Character classes :
+  \d    Any numeric digit from 0 to 9
+  \D    Any character that is not a numeric digit from 0 to 9
+  \w    Any letter,numeric digit, or the underscore character
+  \W    Any character that is not a letter, numeric digit or underscore character
+  \s    Any space,tab, or newline character
+  \S    Any character that is not a space,tab, or a newline character
+
+
+3. RegEx Objects :
+  pr = re.compile(r'\d\d\d-\d\d\d')
+    Here 'pr' is a regex object
+    Using 'r' in compile() ensures that raw strings are passed
+
+4. Matching RegEx Objects :
+  
