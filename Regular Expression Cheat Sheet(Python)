@@ -15,4 +15,26 @@
     Using 'r' in compile() ensures that raw strings are passed
 
 4. Matching RegEx Objects :
-  
+  A regEx object's search() method searches for the string and returns an object
+  of type 'Match'
+  Match objects have a group(), that returns the actual text.
+  If pattern is not found, search() returns None.
+
+5. Grouping :
+  We can group using parentheses. Group(1) is the first group. Using group(0),
+  or group() will return the entire matched text.
+
+  groups() will return all the groups together as a tuple for multiple values.
+  We can unpack it using multiple assignment
+  Example :
+            areaCode, mainNumber = mo.groups()
+
+  For using parentheses as part of the pattern, we can use the escape characters
+  \( and \)
+
+6. Matching multiple groups with pipe :
+  Using the '|' character we can match many expressions at once. The first
+  occurence is returned as the Match object.
+  We can use parentheses to mention prefix only once
+  Example:
+          postRegex = re.compile(r'Post(office|man)')
